@@ -1,0 +1,455 @@
+.content-page {
+    background-image: url('../../assets/images/background2.jpg');
+    // background: url('../../assets/images/background-left.jpg') left center no-repeat,
+    //     url('../../assets/images/background1.jpg') center center no-repeat,
+    //     url('../../assets/images/background-left.jpg') right center no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.main-content-section {
+    margin-bottom: 650px;
+}
+
+.content-page .page-heading .heading h1.heading1,
+h1.heading2 {
+    font-size: 52.1px;
+    color: #000000;
+    font-family: "Montserrat", roboto;
+    font-size: 3.3em;
+    font-weight: 900;
+}
+
+.content-page .page-heading .heading h2.heading3 {
+    font-family: "Montserrat", roboto;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: darkgreen;
+}
+
+.content-info {
+    background-color: #183364;
+    text-align: center;
+    padding: 0.75rem;
+
+}
+
+.content-info .content-heading-title h2,
+.profile-info h2 .section-title-container h2 {
+    color: #ffffff;
+    font-family: "Montserrat", roboto;
+    font-size: 1.6em;
+    font-weight: 800;
+    line-height: 1.25em;
+    margin: 0;
+}
+
+.content-page .page-heading .heading h1.heading2,
+.profile-info h2,
+.section-title-container h2 {
+    color: #183364;
+}
+
+.text-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-box {
+    flex: 1;
+    padding: 15px;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    word-wrap: break-word;
+    background-color: #F8F8F8;
+    height: auto;
+}
+
+.divider {
+    border-left: 2px dotted #000;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.text-box p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.text-box h2 {
+    text-align: center;
+    color: #183364;
+    margin-bottom: 5px;
+}
+
+ul.forex-text-content {
+    list-style: none;
+    padding: 0;
+}
+
+ul.forex-text-content li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+ul.forex-text-content li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #183364;
+}
+
+.text-section .text-box:last-child {
+    padding: 15px 20px;
+    line-height: 1.5;
+}
+
+/**************************************** profile section css start *********************************/
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.profile-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+/******************************************** profile section end ************************************/
+
+
+
+
+/******************************************** trade course section css start ****************************/
+
+.trade-course-container {
+    background-color: #F8F8F8;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 3em 0em 3em 0em;
+}
+
+.trade-course-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title-container {
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.section-title-container h2 {
+    font-size: 2.3em;
+}
+
+.half-width-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.half-width-left {
+    width: 100%;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: darkslateblue;
+}
+
+.course-item {
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.blue-background {
+    background-color: #183364;
+    color: #ffffff;
+}
+
+.white-background {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.black-background {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.more-info {
+    margin-top: 3em;
+}
+
+.more-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.more-info li {
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-left: 35px;
+    position: relative;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.more-info li i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.more-info li.forex-intro i.intro-label {
+    top: 10%
+}
+
+.more-info li.price-action i.price-action-label {
+    top: 7%
+}
+
+.more-info li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.more-info li:last-child:after {
+    width: 0;
+}
+
+.learn-more {
+    background-color: rgb(29, 161, 242);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.learn-more:hover {
+    background-color: #007bb5;
+}
+
+/************************************** Trade course section css end **********************************/
+
+
+
+
+/************************************** Profile details container css start **************************/
+
+.profile-details-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.profile-details-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 3em 0em 7em 0em;
+    background-color: #183364;
+    border-radius: 30px;
+}
+
+.profile-details-heading {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-details-heading h2 {
+    color: #FFFFFF;
+    font-family: "Montserrat", roboto;
+    font-size: 2.3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.profile-data-container {
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    top: 175px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    z-index: 1;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+    color: #183364;
+}
+
+.box p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/******************************************* Profile details container css end ************************************/
+
+
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+@media (max-width: 768px) {
+
+    .content-page {
+        height: 16vh;
+    }
+
+    .content-page .page-heading .heading h1.heading1,
+    h1.heading2 {
+        font-size: 2em;
+    }
+
+    .content-page .page-heading .heading h2.heading3 {
+        font-size: 1.6em;
+        color: darkgreen;
+    }
+
+    .text-section {
+        flex-direction: column;
+    }
+
+    ul.forex-text-content li {
+        padding-bottom: 10px;
+    }
+
+    .course-item h2 {
+        font-size: 1.4rem;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-title-container {
+        padding-bottom: 0;
+    }
+
+    .section-title-container h2 {
+        font-size: 2rem;
+    }
+
+    .more-info li {
+        font-size: 20px;
+        padding-left: 25px;
+    }
+
+    .more-info li.forex-intro i.intro-label {
+        top: 9%
+    }
+
+    .profile-data-container {
+        left: 50px;
+        right: 50px;
+        top: 260px;
+    }
+
+    .profile-details-heading h2 {
+        font-size: 2rem;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .main-content-section {
+        margin-bottom: 1600px;
+    }
+
+    .profile-details-parent {
+        width: 84%;
+    }
+}

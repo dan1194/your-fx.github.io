@@ -1,0 +1,32 @@
+.disclaimer-section {
+    padding: 30px 25px;
+}
+
+.disclaimer-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #183364;
+}
+
+ul.disclaimer-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.disclaimer-list li {
+    text-align: justify;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+ul.disclaimer-list li p {
+    margin-left: 25px;
+    color: #334155;
+}
+
+ul.disclaimer-list li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #183364;
+}
